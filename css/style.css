@@ -126,7 +126,7 @@ body, html {
 /*ABOUT PAGE*/
 
 .about-page {
-    background-image: url("/img/particles.png");
+    background-image: url("../img/particles.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -241,7 +241,7 @@ body, html {
 
 .gallery-page {
     background-color: #ffc4e1;
-    background-image: url("/img/pawel-czerwinski-d7iIvTyzccY-unsplash.jpg");
+    background-image: url("../img/pawel-czerwinski-d7iIvTyzccY-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
