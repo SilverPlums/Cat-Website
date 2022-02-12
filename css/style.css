@@ -1,0 +1,341 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Mallanna', sans-serif;
+    background-color: #ffc4e1;
+    scroll-behavior: smooth;
+    }
+
+   header {
+        background-color: #EAEAEA;
+        opacity: 0.9;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        border-radius: 80px;
+        }
+
+        .logo {
+            cursor: pointer;
+            margin-right: auto;
+            width: 15%;
+            height: 20%;
+        }
+
+        @media only screen and (max-width: 40rem){
+            .logo {
+                visibility: hidden;
+            }
+
+            header {
+                display: block;
+                max-height: 30%;
+                position: relative;
+                border-radius: 0;
+            
+            }
+        }
+        
+    .nav-links {
+            list-style: none;
+        
+        }
+        
+    .nav-links li {
+            display: inline-block;
+            padding: 20px 20px;
+        }
+        
+    .nav-links li a {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #FFC4E1;
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+        }
+        
+    .nav-links li a:hover {
+            background-color: #FF87CA;
+            border: 3px solid #FF87CA;
+            border-radius: 60px;
+            padding: 5px 15px;
+            color: #EAEAEA;
+        }
+
+/*HOMEPAGE*/
+
+.main-page {
+    width: 100%;
+    max-height: 120vh;
+    background-image: url("../img/pawel-czerwinski-cL07wjxsVtc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 150px 0;
+    }
+
+    .main-header {
+        max-width: 60%;
+        max-height: 60vh;
+        background-color: #EED7CE;
+        border-radius: 80px;
+        mix-blend-mode: screen;
+        padding: 50px;
+     }
+
+     .main-img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-header img {
+        width: clamp(30px, 4vw, 30%);
+        mix-blend-mode: multiply;
+        
+    }
+
+    .main-header h1 {
+        font-family: 'Chewy', sans-serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: bold;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px #bb1568;
+        margin-top: 0;
+        text-align: left;
+        line-height: 1;
+        letter-spacing: 5px;
+    }
+
+    .main-header h2 {
+        font-size: clamp(10px, 3.9vw, 1.7rem);
+        -webkit-text-stroke: 1px #bb1568;
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+/*ABOUT PAGE*/
+
+.about-page {
+    background-image: url("/img/particles.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 150vh;
+    background-color:#EED7CE;
+    position: relative;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .custom-shape-divider {
+        position: absolute;
+        top: -14vh;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        z-index: 2;
+    }
+
+    .custom-shape-divider svg {
+        position: relative;
+        display: block;
+        width: calc(156% + 1.3px);
+        height: 120px;
+        transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider .shape-fill {
+        fill: #EED7CE;
+    }
+
+    .about-lily {
+        background-color: #eaeaeae1;
+        border-radius: 80px;
+        max-width: 700px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 10px;
+        text-align: left;
+        margin-left: 50%;
+        margin-right: 30px;
+        z-index: 3;
+         }
+    
+    .about-tuna {
+        background-color: #eaeaeae1;
+        border-radius: 80px;
+        max-width: 700px;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        padding-right: 10px;
+        text-align: left;
+        margin-right: 50%;
+        margin-left: 30px;
+        z-index: 3;
+    }
+
+    @media only screen and (max-width: 70rem) {
+        .about-lily, .about-tuna {
+            margin: 10px;
+        }
+
+    }
+
+    .about-page img {
+        max-width: 40%;
+        max-height: 300px;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        align-self: center;
+    }
+
+    .about-lily-text, .about-tuna-text {
+        max-width: clamp(400px, 10vw, 50%);
+        padding: 20px;
+        margin-top: 15px;
+    
+    }
+
+    .about-page h2 {
+        font-family: 'Chewy', sans-serif;
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: clamp(1.3rem, 3vw, 2rem);
+        line-height: 1.2;
+        letter-spacing: 2;
+        text-transform: uppercase;
+        color: #ff87c9bb;
+    }
+    
+    .about-page p {
+        font-size: clamp(15px, 1.4vw, 1.9rem);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        color: #fab3d5;
+    }
+
+
+   
+/*GALLERY*/
+
+.gallery-page {
+    background-color: #ffc4e1;
+    background-image: url("/img/pawel-czerwinski-d7iIvTyzccY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+
+.gallery-page img {
+    width: clamp(200px, 45vw, 400px);
+    border-radius: 40px;
+    border: #EED7CE dashed 4px;
+}
+
+.lily-gallery-imgs, .tuna-gallery-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 70rem) {
+    .lily-gallery-imgs, .tuna-gallery-imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.custom-shape-divider-top-1644617126 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1644617126 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 107px;
+}
+
+.custom-shape-divider-top-1644617126 .shape-fill {
+    fill: #EED7CE;
+}
+
+.custom-shape-divider-bottom-1644683928 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644683928 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 47px;
+}
+
+.custom-shape-divider-bottom-1644683928 .shape-fill {
+    fill: #EAEAEA;
+}
+
+/*FOOTER*/ 
+
+footer {
+   background-color: #EAEAEA;
+   width: 100%;
+   margin: 0 auto;
+   padding: 10px 0;
+   position: relative;
+}
+
+footer h2{
+    font-family: 'Chewy', sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.7;
+    text-transform: uppercase;
+    color: #ff87c9bb;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 a {
+    color: #ff87c9bb;
+}
